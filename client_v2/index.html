@@ -20,17 +20,18 @@
    <meta name="author" content="">
    <!-- mobile specific metas
                ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- CSS
                ================================================== -->
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/vendor.css">
-   <link rel="stylesheet" href="css/main.css">
+   <link type="text/css" rel="stylesheet" href="/css/base.css">
+   <link type="text/css" rel="stylesheet" href="/css/vendor.css">
+   <link type="text/css" rel="stylesheet" href="/css/main.css">
    <!-- script
                ================================================== -->
-   <script src="js/modernizr.js"></script>
-   <script src="js/pace.min.js"></script>
-   <script src="js/explore.js"></script>
+   <script src="/js/modernizr.js"></script>
+   <script src="/js/pace.min.js"></script>
+   <script src="/js/explore.js"></script>
    <!-- Hotjar Tracking Code for www.xplore.ai -->
    <script>
       (function (h, o, t, j, a, r) {
@@ -46,10 +47,10 @@
                ================================================== -->
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    <link rel="icon" href="favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="../fonts.googleapis.com/css52d0.css?family=Roboto+Mono">
-   <link rel="stylesheet" href="../fonts.googleapis.com/css7b4f.css?family=Roboto">
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115412807-1"></script>
-   <script type="text/javascript" src="js/resources/options.json"></script>
+   <!-- <link rel="stylesheet" href="../fonts.googleapis.com/css52d0.css?family=Roboto+Mono"> -->
+   <!-- <link rel="stylesheet" href="../fonts.googleapis.com/css7b4f.css?family=Roboto"> -->
+   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115412807-1"></script> -->
+   <!-- <script type="text/javascript" src="js/resources/options.json"></script> -->
    <script>
       window.dataLayer = window.dataLayer || [];
 
@@ -94,99 +95,87 @@
    <!-- home
                ================================================== -->
 
-   <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
-      data-position-y=center>
+   <section id="home" class="s-home target-section" data-parallax="scroll" data-position-y=center>
 
       <div class="overlay"></div>
       <div class="shadow-overlay"></div>
       <div class="home-content">
-         <div class="row" style="width:100%;height:80% ;">
-            <div class="col split left">
-               <!-- <video width="95%" height="60%" controls>
-                                    <source src="https://www.youtube.com/watch?v=Njq4A5DAqRw" type="video/mp4">
-                                    <source src="movie.ogg" type="video/ogg">
-                                    Your browser does not support the video tag.
-                                  </video>
-                                  <span>Video Title </span> -->
-
-               <iframe id="player" width="95%" height="90%" src="https://www.youtube.com/embed/tgbNymZ7vqY"
-                  style="margin-left:0.5%;">
-               </iframe>
+         <div class="row row-margin-top">
+            <div class="col-eight split left ">
+               <div class="video-container">
+                  <iframe id="player" width="90%" height="95%" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                     style="margin-left:0.1%;">
+                  </iframe>
+               </div>
                <span>Playig highlights</span>
             </div>
-            <div class="col split right">
+            <div class="col-four split right">
                <div class="tab">
-                  <!-- <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                              <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                              <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
                   <a class="tablinks" id="Ckt"
                      href="javascript:openSport(this.event,'cricket',0);"><b><u>Cricket</u></b></a>
                   <a class="tablinks" href="javascript:openSport(event,'badminton',1);"><b><u>Badminton</u></b></a>
                   <a class="tablinks" href="javascript:openSport(event,'tennis',2);"><b><u>Tennis</u></b></a>
                </div>
                <div id="cricket" class="tabcontent tabStyle">
-                  <!-- <link href="cricketForm.html" rel="import" /> -->
-                  <div style="margin-left:5%;">
+                  <div style="margin-left:5%;padding-top: 5%;">
                      <form id="cricketFrom">
-                        <!-- <div>
-                           <span>
-                              <h3 style="color:black;">Fill Batsman Details</h3>
-                           </span>
-                        </div> -->
-                        <!-- <div> -->
-                        <span class="rowSpan">
-                           <label class="labelStyle">Batsman</label>
-                           <div class="selectBoxWrapper">
+                        <div class="row input-label-row">
+                           <div class="col-four">
+                              <label class="labelStyle">Batsman</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <select class="select-box" name="batsman" id="batsman" required>
-                                 <option value="Kohli" class="options-style">Virat Kohli</option>
+                                 <option value="Kohli" class="options-style">Virats Kohli</option>
                                  <option value="Dhoni" class="options-style">MS Dhoni</option>
                                  <option value="Warner" class="options-style">David Warner</option>
                               </select>
                            </div>
-                        </span>
-                        <!-- </div> -->
+                        </div>
 
-                        <!-- <div> -->
-                        <span class="rowSpan">
-                           <label class="labelStyle">Bowler</label>
-                           <div class="selectBoxWrapper">
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Bowler</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <select class="select-box" name="bowler" id="bowler" required>
                                  <option value="Bumrah" class="options-style">Jaspreet Bumrah</option>
                                  <option value="Chahal" class="options-style">Yuzvendra Chahal</option>
                                  <option value="Malinga" class="options-style">Lasith Malinga</option>
                               </select>
                            </div>
-                        </span>
-                        <!-- </div> -->
+                        </div>
 
-                        <!-- <div> -->
-                        <span class="rowSpan">
-                           <label class="labelStyle">Shot</label>
-                           <div class="selectBoxWrapper">
+                        
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Shot</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <select class="select-box" name="shot" id="shot" required>
                                  <option value="pull" class="options-style">Pull</option>
                                  <option value="sweep" class="options-style">Sweep</option>
                               </select>
                            </div>
-                        </span>
-                        <!-- </div> -->
+                        </div>
 
-                        <!-- <div> -->
-                        <span class="rowSpan">
-                           <label class="labelStyle">Ball Type</label>
-                           <div class="selectBoxWrapper">
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Ball Type</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <select class="select-box" name="ball_type" id="ball_type" required>
                                  <option value="yorker" class="options-style">Yorker</option>
                                  <option value="googly" class="options-style">Googly</option>
                               </select>
                            </div>
-                        </span>
-                        <!-- </div> -->
+                        </div>
 
-                        <!-- <div> -->
-                        <span class="rowSpan">
-                           <label class="labelStyle">Runs</label>
-                           <div class="selectBoxWrapper">
+                        
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Runs</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <select class="select-box" name="runs" id="runs" required>
                                  <option value="1" class="options-style">1</option>
                                  <option value="2" class="options-style">2</option>
@@ -196,21 +185,21 @@
                                  <option value="6" class="options-style">Six</option>
                               </select>
                            </div>
-                        </span>
-                        <!-- </div> -->
+                        </div>
 
-                        <!-- <div> -->
-                        <span class="rowSpan">
-                           <label class="labelStyle">Wickets</label>
-                           <div class="selectBoxWrapper">
+                        
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Wickets</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <select class="select-box" name="wickets" id="wickets" required>
                                  <option value=undefined class="options-style">No choice</option>
                                  <option value=true class="options-style">Wicket</option>
                                  <option value=false class="options-style">No Wicket</option>
                               </select>
                            </div>
-                        </span>
-                        <!-- </div> -->
+                        </div>
                         <div style="width:100%;margin-top: 10%;">
                            <button class="submit-button" type="submit">Submit</button>
                         </div>
@@ -218,34 +207,41 @@
                   </div>
                </div>
 
-               <div id="badminton" class="tabcontent">
-                  <div style="margin-left:5%;">
+               <div id="badminton" class="tabcontent tabStyle">
+                  <div style="margin-left:5%;padding-top: 5%;">
                      <form id="badmintonFrom">
 
-                        <span class="rowSpan">
-                           <label class="labelStyle">Video Url</label>
-                           <div class="selectBoxWrapper">
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Video Url</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <input type="text" style="color:white;" placeholder="Video Url" name="inputUrl"
-                                 id="badmintonUrl" required />
-
+                                    id="badmintonUrl" required />
                            </div>
-                        </span>
-                        <span class="rowSpan">
-                           <label class="labelStyle">Start Time</label>
-                           <div class="selectBoxWrapper">
+                        </div>
 
-                              <input type="text" style="color:white;" placeholder="MM:SS" name="startTime" id="bSTime"
-                                 required />
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Start Time</label>
                            </div>
-                        </span>
-                        <span class="rowSpan">
-                           <label class="labelStyle">End Time</label>
-                           <div class="selectBoxWrapper">
+                           <div class="selectBoxWrapper col-six">
+                              <input type="text" style="color:white;" placeholder="MM:SS" name="startTime"
+                                    id="bSTime" required />
+                           </div>
+                        </div>
 
+
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">End Time</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <input type="text" style="color:white;" placeholder="MM:SS" name="endTime" id="bETime"
-                                 required />
+                                    required />
                            </div>
-                        </span>
+                        </div>
+
 
                         <div style="width:100%;margin-top: 10%;">
                            <button class="submit-button" type="submit">Submit</button>
@@ -254,32 +250,42 @@
                   </div>
                </div>
 
-               <div id="tennis" class="tabcontent">
-                  <div style="margin-left:5%;">
+               <div id="tennis" class="tabcontent tabStyle">
+                  <div style="margin-left:5%;padding-top: 5%;">
                      <form id="tennisFrom">
 
-                        <span class="rowSpan">
-                           <label class="labelStyle">Video Url</label>
-                           <div class="selectBoxWrapper">
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Video Url</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <input type="text" placeholder="Video Url" style="color:white;" name="inputUrl"
-                                 id="tennisUrl" required />
+                                    id="tennisUrl" required />
+                           </div>
+                        </div>
 
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">Start Time</label>
                            </div>
-                        </span>
-                        <span class="rowSpan">
-                           <label class="labelStyle">Start Time</label>
-                           <div class="selectBoxWrapper">
-                              <input type="text" style="color:white;" placeholder="MM:SS" name="startTime" id="tSTime"
-                                 required />
+                           <div class="selectBoxWrapper col-six">
+                              <input type="text" style="color:white;" placeholder="MM:SS" name="startTime"
+                                    id="tSTime" required />
                            </div>
-                        </span>
-                        <span class="rowSpan">
-                           <label class="labelStyle">End Time</label>
-                           <div class="selectBoxWrapper">
+                        </div>
+
+
+                        
+
+                        <div class="row input-label-row">
+                           <div class=" col-four">
+                              <label class="labelStyle">End Time</label>
+                           </div>
+                           <div class="selectBoxWrapper col-six">
                               <input type="text" style="color:white;" placeholder="MM:SS" name="endTime" id="tETime"
-                                 required />
+                                    required />
                            </div>
-                        </span>
+                        </div>
 
 
                         <div style="width:100%;margin-top: 10%;">
@@ -329,7 +335,7 @@
       <div class="about__line"></div>
    </section>
    <!-- end s-about -->
-   
+
    <!-- contact
                ================================================== -->
    <section id="company" class="s-contact">
@@ -706,9 +712,9 @@
    </div>
    <!-- Java Script
                ================================================== -->
-   <script src="js/jquery-3.2.1.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
+   <script src="/js/jquery-3.2.1.min.js"></script>
+   <script src="/js/plugins.js"></script>
+   <script src="/js/main.js"></script>
 </body>
 
 <!-- Mirrored from www.xplore.ai/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Jul 2019 10:38:18 GMT -->

@@ -644,6 +644,10 @@ textarea {
     .mob-full {
         width: 100%;
     }
+
+    .row-margin-top{
+        margin-top: 10%;
+    }
 }
 
 
